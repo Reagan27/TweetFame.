@@ -1,0 +1,230 @@
+/* Animating background color */
+body {
+	background-color: #FFFFFF; /* Default background color */
+	animation: change-colors 25s infinite;
+  }
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+	/* added !important */
+	animation: typing 3s steps(20, end), blink 0.5s step-end infinite !important;
+	font-display: red;
+  }
+  
+  
+  @keyframes change-colors {
+	0% {
+	  background-color: #FFFFFF;
+	}
+	50% {
+	  background-color: #201907;
+	}
+	100% {
+	  background-color: #607D8B;
+	}
+  }
+  
+  /* Styling the button */
+  button {
+	background-color: #FFC107;
+	color: #FFFFFF;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #FFA000;
+  }
+  
+  /* Styling the image */
+  .image-container {
+	background-color: #ECEFF1;
+	padding: 20px;
+	display: inline-block;
+  }
+  
+  .image-container img {
+	max-width: 100%;
+  }
+  /* Body styles */
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+	line-height: 1.5;
+	background-color: #f4f4f4;
+  }
+  
+  /* Header styles */
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: rgb(15, 2, 2);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+	font-size: 2rem;
+	margin: 0;
+	color:red;
+  }
+  
+  nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  nav ul li {
+	margin-right: 1rem;
+  }
+  
+  nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+	background-color: #1b0505;
+  }
+  
+  /* Main styles */
+  main {
+	max-width: 800px;
+	margin: 2rem auto;
+	padding: 0 1rem;
+  }
+  
+  section {
+	margin-bottom: 2rem;
+  }
+  
+  h2 {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  p {
+	margin-bottom: 1rem;
+  }
+  
+  ul {
+	list-style: none;
+	padding: 0;
+  }
+  
+  li {
+	padding: 1rem;
+	background-color: #520a0a;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 0.25rem;
+	margin-bottom: 1rem;
+  }
+  
+  li img {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 0.5rem;
+  }
+  
+  li h3 {
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+  }
+  
+  li a {
+	color:white;
+	text-decoration: none;
+  }
+  
+  li a:hover {
+	text-decoration: underline;
+  }
+  
+  li div {
+	margin-top: 1rem;
+  }
+  
+  li div a {
+	display: block;
+	margin-bottom: 0.5rem;
+  }
+  
+  li p:last-child {
+	margin-bottom: 0;
+  }
+  
+  button.add-to-cart {
+	background-color: #0077ff;
+	color: #fff;
+	font-size: 1rem;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  button.add-to-cart:hover {
+	background-color: #005ae6;
+	cursor: pointer;
+  }
+  /* Styling the header titles */
+header h1, header nav ul li a {
+	opacity: 1;
+	transition: opacity 0.5s ease;
+  }
+  
+  header:hover h1, header:hover nav ul li a {
+	opacity: 1;
+  }
+  
+
+
+/* Typing animation */
+@keyframes typing {
+	from { width: 0; }
+	to { width: 100%; }
+}
+
+/* Blinking cursor animation */
+@keyframes blink {
+	from, to { border-right-color: transparent; }
+	50% { border-right-color: #333333; }
+}
+nav ul li a {
+	text-decoration: none;
+	color: #FFFFFF; /* Change the font color to white */
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 0.25rem;
+	transition: background-color 0.3s ease;
+  }
+  p {
+	margin-bottom: 1rem;
+	color: #fff;
+  }
+  li:nth-child(odd) {
+	background-color: #520a0a; /* odd numbered items have a dark background color */
+  }
+  
+  li:nth-child(even) {
+	background-color: #be9d9d; /* even numbered items have a lighter background color */
+  }
+   
